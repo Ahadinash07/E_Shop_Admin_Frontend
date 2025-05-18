@@ -6,7 +6,7 @@ import { useTable, usePagination, useGlobalFilter } from "react-table";
 import { FaTrash } from "react-icons/fa";
 import DeleteSubCategoryModal from "./DeleteSubCategoryModal";
 
-const API_URL = "https://e-shop-backend-sage.vercel.app";
+const API_URL = "https://ahadinash07-e-shop-backend2-for-admin-retailer.vercel.app";
 
 const SubCategory = () => {
   const [subCategories, setSubCategories] = useState([]);

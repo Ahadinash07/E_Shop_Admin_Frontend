@@ -83,7 +83,7 @@ const RetailerOrdersModal = ({ showModal, setShowModal, retailer }) => {
         setLoading(true);
         try {
           const response = await axios.get(
-            `https://e-shop-backend-sage.vercel.app/retailers/${retailer.retailerId}/orders`
+            `https://ahadinash07-e-shop-backend2-for-admin-retailer.vercel.app/retailers/${retailer.retailerId}/orders`
           );
           if (isMounted) {
             setOrders(response.data.data || []);

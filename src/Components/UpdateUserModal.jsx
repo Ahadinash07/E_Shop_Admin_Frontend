@@ -10,7 +10,7 @@ const UserUpdateModal = ({ showModal, setShowModal, user, onUpdate }) => {
     e.preventDefault();
 
     try {
-      const response = await axios.put("https://e-shop-backend-sage.vercel.app/admin_user_update", {
+      const response = await axios.put("https://ahadinash07-e-shop-backend2-for-admin-retailer.vercel.app/admin_user_update", {
         userId: user.userId,
         userName,
         email,

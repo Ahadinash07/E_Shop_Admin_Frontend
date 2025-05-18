@@ -6,7 +6,7 @@ import { FaEye, FaToggleOn, FaToggleOff } from "react-icons/fa";
 import RetailerDetailsModal from "./RetailerDetailsModal";
 import debounce from "lodash/debounce";
 
-const API_URL = "https://e-shop-backend-sage.vercel.app";
+const API_URL = "https://ahadinash07-e-shop-backend2-for-admin-retailer.vercel.app";
 
 const Retailer = () => {
   const [retailers, setRetailers] = useState([]);

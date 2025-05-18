@@ -13,7 +13,7 @@ const CustomerOrdersModal = ({ showModal, setShowModal, user }) => {
     if (user && showModal) {
       setLoading(true);
       axios
-        .get(`https://e-shop-backend-sage.vercel.app/users/${user.user_id}/orders`)
+        .get(`https://ahadinash07-e-shop-backend2-for-admin-retailer.vercel.app/users/${user.user_id}/orders`)
         .then((response) => {
           setOrders(response.data.data);
           setLoading(false);

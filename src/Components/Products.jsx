@@ -4,7 +4,7 @@ import { useTable, usePagination, useGlobalFilter } from "react-table";
 import debounce from "lodash/debounce";
 import ProductDetailsModal from "./ProductDetailsModal";
 
-const API_URL = "https://e-shop-backend-sage.vercel.app";
+const API_URL = "https://ahadinash07-e-shop-backend2-for-admin-retailer.vercel.app";
 
 const Products = () => {
   const [products, setProducts] = useState([]);

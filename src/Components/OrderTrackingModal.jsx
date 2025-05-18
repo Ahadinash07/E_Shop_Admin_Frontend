@@ -11,7 +11,7 @@ const OrderTrackingModal = ({ showModal, setShowModal, order }) => {
     if (order && showModal) {
       setLoading(true);
       axios
-        .get(`https://e-shop-backend-sage.vercel.app/orders/${order.order_id}/tracking`)
+        .get(`https://ahadinash07-e-shop-backend2-for-admin-retailer.vercel.app/orders/${order.order_id}/tracking`)
         .then((response) => {
           setTrackingHistory(response.data.data);
           setLoading(false);
@@ -26,14 +26,14 @@ const OrderTrackingModal = ({ showModal, setShowModal, order }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post(`https://e-shop-backend-sage.vercel.app/orders/${order.order_id}/tracking`, {
+      .post(`https://ahadinash07-e-shop-backend2-for-admin-retailer.vercel.app/orders/${order.order_id}/tracking`, {
         status,
         notes,
       })
       .then(() => {
         // Refresh tracking history
         axios
-          .get(`https://e-shop-backend-sage.vercel.app/orders/${order.order_id}/tracking`)
+          .get(`https://ahadinash07-e-shop-backend2-for-admin-retailer.vercel.app/orders/${order.order_id}/tracking`)
           .then((response) => {
             setTrackingHistory(response.data.data);
             setStatus("");

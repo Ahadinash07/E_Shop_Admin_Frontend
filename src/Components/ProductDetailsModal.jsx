@@ -15,7 +15,7 @@ const ProductDetailsModal = ({ showModal, setShowModal, product }) => {
         setError(null);
         try {
           const response = await axios.get(
-            `https://e-shop-backend-sage.vercel.app/products/${product.productId}`
+            `https://ahadinash07-e-shop-backend2-for-admin-retailer.vercel.app/products/${product.productId}`
           );
           if (isMounted) {
             console.log("Product details response:", response.data.data);

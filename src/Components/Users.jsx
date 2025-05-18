@@ -9,7 +9,7 @@ import DeleteUserModal from "./DeleteUserModal";
 import RoleAssignmentModal from "./RoleAssignmentModal";
 import UserUpdateModal from "./UpdateUserModal";
 
-const API_URL = "https://e-shop-backend-sage.vercel.app";
+const API_URL = "https://ahadinash07-e-shop-backend2-for-admin-retailer.vercel.app";
 
 export default function Users() {
   const [users, setUsers] = useState([]);

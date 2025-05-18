@@ -7,7 +7,7 @@ const RetailerDetailsModal = ({ showModal, setShowModal, retailer }) => {
   useEffect(() => {
     if (retailer && showModal) {
       axios
-        .get(`https://e-shop-backend-sage.vercel.app/retailers/${retailer.retailerId}`)
+        .get(`https://ahadinash07-e-shop-backend2-for-admin-retailer.vercel.app/retailers/${retailer.retailerId}`)
         .then((response) => {
           setRetailerDetails(response.data.data);
         })
